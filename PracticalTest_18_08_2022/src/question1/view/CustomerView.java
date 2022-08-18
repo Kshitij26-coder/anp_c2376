@@ -5,18 +5,23 @@ public class CustomerView {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     CustomerService csObj =new CustomerService();
-     csObj.checkEligibility();
-     // Customer cObj= new Customer(10,"Harry", 11);
-		//int a= cObj.getAge();
-    /* if (checkEligibility == true) {
-    	 System.out.println("You are eligible to vote.");
-    	 
-    }else {
-    	 System.out.println("You are not eligible to vote.");
+     CustomerService csaObj =new CustomerService();
+    boolean b= csaObj.checkEligibility(10,"harry", 18);
+     System.out.println(b);
+    
+     if ( b==true) {
+    	 System.out.println("You are eligible for voting");
+    	   	 
+     }else {
+    	 System.out.println("You are not eligible for voting");
      }
-    */	
+     
      }
 	}
 
-
+//Customer cObj=new Customer(10,"harry",14);
+//  int a =cObj.getAge();
+ // if(a>=18);
+ // else {
+ 	// System.out.println(false);
+  //}

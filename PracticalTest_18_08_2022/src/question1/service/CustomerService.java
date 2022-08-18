@@ -1,15 +1,11 @@
 package question1.service;
 import question1.model.Customer;
 public class CustomerService {
-	public void checkEligibility(){
+	public static boolean checkEligibility(int id, String name,int age){
 		
-		Customer cObj= new Customer(10,"Harry", 11);
-		int a= cObj.getAge();
-		//System.out.println(a);
-		boolean bool =(a>=18);
-		System.out.println(bool);
-		
-						 	
+		return (age>=18);
+						
+			
 	}
 
 	public static void main(String[] args) {
@@ -18,3 +14,9 @@ public class CustomerService {
 	}
 
 }
+//Customer cObj= new Customer(10,"Harry", 18);
+		//int a= cObj.getAge();
+		//System.out.println(a);
+		//boolean bool =(a>=18);
+		//System.out.println(bool);
+		
