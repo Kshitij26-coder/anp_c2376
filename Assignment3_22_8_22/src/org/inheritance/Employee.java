@@ -1,0 +1,13 @@
+package org.inheritance;
+
+public class Employee extends Member {
+
+	 private String specialization;
+     
+     public Employee(String name,int age,long phoneNumber,String address, double salary, String specialization)
+     {
+  	   super(name, age, phoneNumber, address, salary);
+  	   this.specialization =specialization;
+     }
+
+}
