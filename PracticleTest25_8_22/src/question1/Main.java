@@ -1,20 +1,26 @@
 package question1;
 
 public class Main {
+	int cObj;
+	public int countObject() {
+    	
+    	return cObj;
+    	    }
 	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Degree degreeObj=new Degree();
-		Undergraduate undergraduateObj= new Undergraduate();
-		Postgraduate postgraduateObj=new Postgraduate ();
+		Degree degreeObj=new Degree(5);
+		Undergraduate undergraduateObj= new Undergraduate(3);
+		Postgraduate postgraduateObj=new Postgraduate (2);
 		degreeObj.getDegree();
 		undergraduateObj.getDegree();
 		postgraduateObj.getDegree();
 		
-		degreeObj.countObject(5);
-		undergraduateObj.countObject(2);
-		postgraduateObj.countObject(3);
+		/*degreeObj.countObject();
+		undergraduateObj.countObject();
+		postgraduateObj.countObject();
+		//System.out.println(countObject);*/
+		
 	}
 
 }
