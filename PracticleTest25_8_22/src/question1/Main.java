@@ -2,8 +2,8 @@ package question1;
 
 public class Main {
 	int cObj;
-	public int countObject() {
-    	
+	public int countObject(int cObj) {
+    	this.cObj=cObj;
     	return cObj;
     	    }
 	

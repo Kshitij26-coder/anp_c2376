@@ -1,8 +1,8 @@
 package question1;
 
 public class Undergraduate extends Degree {
-	Undergraduate(int b) {
-		super(b);
+	Undergraduate(int cObj) {
+		super(cObj);
 		// TODO Auto-generated constructor stub
 	}
 

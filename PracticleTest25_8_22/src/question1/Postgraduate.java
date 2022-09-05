@@ -1,9 +1,10 @@
 package question1;
 
 public class Postgraduate extends Degree{
-	Postgraduate(int b) {
-		super(b);
-		// TODO Auto-generated constructor stub
+	Postgraduate(int countObject) {
+		super(countObject);
+		
+		
 	}
 
 	public void getDegree() {
