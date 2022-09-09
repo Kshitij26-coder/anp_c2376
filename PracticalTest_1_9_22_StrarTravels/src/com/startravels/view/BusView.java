@@ -3,8 +3,8 @@ import com.startravels.model.Bus;
 import com.startravels.service.BusService;
 import java.util.Scanner;
 public class BusView {
-	Scanner sc=new Scanner(System.in);
-	public boolean addBus() {
+	static Scanner sc=new Scanner(System.in);
+	public static boolean addBus() {
 		boolean addResult=false;
 		System.out.println("Enter busID");
 		int busId=sc.nextInt();

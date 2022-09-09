@@ -7,7 +7,7 @@ import java.util.Scanner;
  
 public class Main {
 	static Scanner sc =new Scanner(System.in);
-	public static void displaySubMenu() {
+	public static boolean displaySubMenu() {
 		do {
 		System.out.println("1. Add Bus");
 		System.out.println("2. Display All Bus");
@@ -16,11 +16,17 @@ public class Main {
 		sc.nextLine();
 		switch (subMenuChoices) {
 		case 1:
-			System.out.println("Bus added Successfully");break;
+			System.out.println("Bus added Successfully");
+			 break;
 		case 2:
+			System.out.println();
+			//BusView b1;
+			BusView.addBus();
+			 break;
+		case 3:	
 			System.exit(0);break;
 			default:
-				System.out.println("Not a valid input1");
+				System.out.println("Not a valid input1");break;
 		}
 		}while(true);
 	}
@@ -36,7 +42,8 @@ public class Main {
 			
 			switch(mainMenuChoice) {
 			case 1:
-				System.out.println("sub menu");break;
+				System.out.println("sub menu");
+				System.out.println(displaySubMenu()); break;
 			case 2:
 				System.exit(0);break;
 				default: 
