@@ -1,6 +1,6 @@
 package org.game;
 
 public interface Moveable {
-	void move();
+	 abstract void move();
 
 }
