@@ -8,20 +8,20 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		  ArrayList<Employee> em= new ArrayList<Employee>();
 		  
-		  Employee [] eArray= new Employee[5];
-		  for(int i =0;i< 5 ;i++) {
+		  for(int i =0;i< 2 ;i++) {
 			  
 			System.out.println("Enter Employee Id: ");
-			int employeeId = sc.nextInt();
-			sc.nextLine();
+			String employeeId = sc.nextLine();
+			
 			System.out.println("Enter Employee Name: ");
 			String employeeName = sc.nextLine();
 			System.out.println("Enter Employee Joining Date: ");
-			String ajoiningDate = sc.nextLine();
+			String joiningDate = sc.nextLine();
 			
 			SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
-			
+			Employee.addEmployee(employeeId, employeeName, joiningDate, em);
 		  }
 		
 		

@@ -4,14 +4,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.*;
 public class Employee {
-  int employeeId;
+  String employeeId;
   String employeeName;
   String joiningDate;
   
- public Employee() {
-	 
- }
-  public Employee(int employeeId, String employeeName, String joiningDate) {
+ 
+  public Employee(String employeeId, String employeeName, String joiningDate) {
 	super();
 	this.employeeId = employeeId;
 	this.employeeName = employeeName;
@@ -20,33 +18,33 @@ public class Employee {
 }
 
 
-public int getEmployeeId() {
+public String getEmployeeId() {
 	return employeeId;
 }
-public void setEmployeeId(int employeeId) {
-	this.employeeId = employeeId;
-}
+
 public String getEmployeeName() {
 	return employeeName;
 }
-public void setEmployeeName(String employeeName) {
-	this.employeeName = employeeName;
-}
+
+
 public String getJoiningDate() {
 	return joiningDate;
 }
-public void setJoiningDate(String joiningDate) {
-	this.joiningDate = joiningDate;
-}
+
 
 @Override
 public String toString() {
 	return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", joiningDate=" + joiningDate
 			+ "]";
 }
-public Employee addEmployee() {
+public static void addEmployee(String employeeId,String employeeName,String joiningDate,ArrayList<Employee>empInfo) {
   
   Employee emp= new Employee(employeeId,employeeName,joiningDate);
-	return emp;
+	empInfo.add(emp);
+	System.out.println("employee is added");
+	System.out.println("============");
+	
   }
+
+
 }
