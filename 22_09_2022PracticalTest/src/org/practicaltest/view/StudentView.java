@@ -10,7 +10,8 @@ public class StudentView {
 
 	public void showData() {
 		
-		System.out.println("studentName= "+studentName+" "+"Student ID= "+studentId );
+		String studentId = null;
+		System.out.println("studentName= "+studentId+" "+"Student ID= "+studentId );
 	}
 	
 }
